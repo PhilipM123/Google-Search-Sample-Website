@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            #form{
+                margin: auto;
+                margin-left: 1%;
+                margin-top: 150px;
+                width: 600px;
+                max-width: 90%;
+            }
+            #form form{
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                background: white;
+            }
+            #forminput{
+                border: 2px solid silver;
+                border-style: outset;
+                width: 50%;
+                height: 20px;
+                background: white;
+                margin: 10px;
+            }
+            #formsubmit{
+                margin-left: 52%;
+                width: 150px;
+                height: 30px;
+                border-color: aliceblue;
+                border-radius: 4px;
+                outline: none;
+                transition: .2s;
+                margin-top: 10px;
+                background-color: rgb(47, 130, 255);
+                color: white;
+            }
+            #formsubmit:hover{
+                opacity: .8;
+                border-color: rgb(71, 71, 71);
+            }
+            #search{
+                margin: auto;
+                margin-top: 20px;
+                margin-left: 85%;
+            }
+            label{
+                width: 140px;
+                display: inline-block;
+                margin: 5px;
+                font-size: 16px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="googlesearch">
+            <a href="index.html" id="search">Google Search</a>
+        </div>
+        <form action="https://www.google.com/search" id="form">
+            <h2>Find pages with...</h2>
+            <label>all these words:</label>
+            <input type="text" name="q" id="forminput"><br>
+            <label>this exact word or phrase:</label>
+            <input type="text" name="q" id="forminput"><br>
+            <label>any of these words:</label>
+            <input type="text" name="q" id="forminput"><br>
+            <label>none of these words:</label>
+            <input type="text" name="q" id="forminput"><br>
+            <input type="submit" value="Advanced Search" id="formsubmit">
+        </form>
+
+
+    </body>
+</html>
